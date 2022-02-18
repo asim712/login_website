@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Post{% endblock title %}
+{% block body %}
+
+
+<div class="container my-4 px-5">
+    <div class="card">
+        <div class="card-header">
+       <h3> {{posts.title}}</h3>
+        </div>
+        <div class="card-body">
+            <!-- <img src="{{post.img.url}}" class="d-block w-100" alt="..."> -->
+        <blockquote class="blockquote mb-0">
+            <p>{{posts.desc}}</p>
+            <footer class="blockquote-footer">{{posts.created_at}} 
+        </blockquote>
+        </div>
+    </div>
+</div>
+{% endblock body %}
